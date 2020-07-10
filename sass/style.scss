@@ -40,7 +40,7 @@ header, footer, .main-section__prochainement{
 }
 
 .menu-item{
-    width: 320px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,5 +185,8 @@ footer{
 @media screen and (max-width:800px){
     .main-section__prochainement{
         width: 100%;
+    }
+    .menu-item{
+        width: 450px;
     }
 }
