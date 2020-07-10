@@ -174,7 +174,7 @@ footer a {
     transform: rotate(5deg);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .main-section__prochainement {
     width: 100%;
   }
