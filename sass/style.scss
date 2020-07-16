@@ -33,6 +33,7 @@ header, footer, .main-section__prochainement{
     align-items: center;
     h1{
         color: $jaune;
+        font-size: 2.8rem;
     }
 }
 
@@ -49,7 +50,7 @@ header, footer, .main-section__prochainement{
 }
 
 .menu-item{
-    width: 280px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +82,7 @@ header, footer, .main-section__prochainement{
 //gestion des couleurs et font des menu
 //MENU 1
 .background1{
-    background-color: #fbdcdb;
+    background-color: #fcdfdb;
 }
 .title__menu1, .menu1{
     color:#3d1319;
@@ -198,7 +199,7 @@ footer{
     bottom: 0;
     a{
         color: $jaune;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -225,7 +226,7 @@ footer{
 }
 
 .page__background{
-    background-color: #fbdcdb;
+    background-color: #fcdfdb;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -235,15 +236,20 @@ footer{
 
 .page__background-title{
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .carte__box{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 60px;
     &-title{
         width: 100%;
         text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
     }
     &-menu{
         width: 100%;
@@ -253,16 +259,67 @@ footer{
         flex-wrap: wrap;;
         width: 100%;
         justify-content: space-between;
+        margin-bottom: 20px;
+    }
+}
+
+.carte__box-menu-content .price{
+    font-weight: 600;
+}
+
+.left_svg, .right_svg{
+    width: 30%;
+}
+
+.plat-title{
+    position: relative;
+}
+
+.plat-title::after{
+    content: ' ';
+    position: absolute;
+    background-color: #3d1319;
+    width: 100%;
+    opacity: 0;
+    height: 3px;
+    left: 0;
+    bottom: -3px;   
+}
+
+.plat-title:hover{
+    cursor: pointer;
+    &.plat-title::after{
+        animation:slide .5s ease-in-out forwards;
+    }
+}
+
+@keyframes slide{
+    0%{
+        transform: scaleX(0);
+        transform-origin: left;
+        opacity: 0;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: left;
+        opacity: 1;
     }
 }
 
 
+
+
+
+
+//pour rendre les pages specifiques:
 .marron{
     color:#3d1319;
 }
 .merienda{
     font-family: 'merienda';
 }
+
+
 //MEDIA QUERIES RESPONSIVE
 @media screen and (max-width:850px){
     .menu-item{
@@ -294,5 +351,19 @@ footer{
     .main-section__prochainement{
         width: 100%;
     }
+
+    .left_svg, .right_svg{
+        width: 15%;
+    }
+    .page__background{
+        padding: 20px;
+    }
+    .carte__box-title h2{
+        font-size: 1.3rem;
+    }
+    .carte__box-menu-content p{
+        font-size: .9rem;
+    }
+    
 }
 
