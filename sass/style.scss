@@ -126,6 +126,7 @@ header, footer, .main-section__prochainement{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Dancing Script', cursive;
+    padding: 5px;
 }
 .menu3{
     color:#0887fb;
@@ -226,17 +227,18 @@ footer{
 }
 
 .page__background{
-    background-color: #fcdfdb;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px;
-
 }
 
 .page__background-title{
     text-align: center;
     margin-bottom: 60px;
+    h1{
+        font-size: 2rem;
+    }
 }
 
 .carte__box{
@@ -273,6 +275,9 @@ footer{
 
 .plat-title{
     position: relative;
+    &.chic{
+        font-size: 1.2rem;
+    }
 }
 
 .plat-title::after{
@@ -312,14 +317,25 @@ footer{
 
 
 //pour rendre les pages specifiques:
-.marron{
+.note_bg{
     color:#3d1319;
+    background-color: #fcdfdb;
+}
+.delice_bg{
+    background-color: #EDEFEF;
 }
 .merienda{
     font-family: 'merienda';
 }
-
-
+.devonshire{
+    font-family: 'Devonshire', cursive;
+}
+.dancing{
+    font-family: 'Dancing Script', cursive;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
 //MEDIA QUERIES RESPONSIVE
 @media screen and (max-width:850px){
     .menu-item{
