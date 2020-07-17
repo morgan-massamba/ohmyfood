@@ -50,12 +50,12 @@ header, footer, .main-section__prochainement{
 }
 
 .menu-item{
-    width: 300px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 540px;
+    height: 560px;
     text-align: center;
     margin-bottom: 40px;
     box-shadow: 0 0 8px rgba(212, 211, 211, 0.781);
@@ -74,7 +74,7 @@ header, footer, .main-section__prochainement{
         opacity: 1;
     }
     100%{
-        transform: scale(1.3);
+        transform: scale(1.2);
         opacity: 0.4;
     }
 }
@@ -87,7 +87,7 @@ header, footer, .main-section__prochainement{
 .title__menu1, .menu1{
     color:#3d1319;
     font-family: 'Devonshire', cursive;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 .menu1{
     font-family: 'Merienda', cursive;
@@ -101,17 +101,17 @@ header, footer, .main-section__prochainement{
 
 }
 .title__menu2{
-    background: -webkit-linear-gradient(left, #c77412, #c4a4f9);
+    background: -webkit-linear-gradient(top left, #c77412,#A56799, #8F5BFE);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
 }
 .menu2{
     color:#c77412;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-top: 10px;
 
 }
@@ -119,7 +119,7 @@ header, footer, .main-section__prochainement{
 //MENU 3 
 .background3{
     background-color: #EDEFEF;
-    font-size: 1.5rem;
+
 }
 .title__menu3{
     background: -webkit-linear-gradient(left, #0227dc, #0887fb);
@@ -127,11 +127,13 @@ header, footer, .main-section__prochainement{
     -webkit-text-fill-color: transparent;
     font-family: 'Dancing Script', cursive;
     padding: 5px;
+    font-size: 2rem;
 }
 .menu3{
     color:#0887fb;
     font-family: 'Merienda', cursive;
     margin-top: 10px;
+    font-size: 2.2rem;
 }
 
 //MENU 4
@@ -144,12 +146,12 @@ header, footer, .main-section__prochainement{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Merienda', cursive;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 .menu4{
     color:#3D923A;
     font-family: 'Merienda', cursive;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-top: 10px;
 }
 
@@ -223,7 +225,8 @@ footer{
 //CSS PAGES
 .page__title{  
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
 }
 
 .page__background{
@@ -231,13 +234,35 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px;
+    box-shadow: 0 0 8px rgba(212, 211, 211, 0.781);
 }
 
 .page__background-title{
     text-align: center;
     margin-bottom: 60px;
-    h1{
-        font-size: 2rem;
+    font-size: 2rem;
+    &--note{
+        font-family: "Devonshire", cursive;
+    }
+    &--chic{
+        background: -webkit-linear-gradient(top left, #c77412,#A56799, #8F5BFE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Roboto', sans-serif;
+    }
+    &--delice{
+        background: -webkit-linear-gradient(left, #0227dc, #0887fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script', cursive;
+        padding:5px;
+        letter-spacing: 2px;
+        font-size: 3.5rem;
+    }
+    &--palette{
+        background: -webkit-linear-gradient(left, #41953c, #beff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -245,16 +270,20 @@ footer{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     &-title{
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         display: flex;
         justify-content: space-between;
     }
     &-menu{
         width: 100%;
+        &--padding{
+            padding-left: 8%;
+            padding-right: 8%;
+        }
     }
     &-menu-content{
         display: flex;
@@ -262,6 +291,12 @@ footer{
         width: 100%;
         justify-content: space-between;
         margin-bottom: 20px;
+        &--end{
+            justify-content: center;
+            align-items: center;
+            font-family: Devonshire;
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -269,26 +304,43 @@ footer{
     font-weight: 600;
 }
 
+//degradé pour la page chic francaise
+.degrade1{
+    color:#c77412;
+}
+.degrade2{
+    color:#A56799;
+}
+.degrade3{
+    color:#6E4CCC;
+}
+
+
 .left_svg, .right_svg{
     width: 30%;
 }
 
 .plat-title{
     position: relative;
-    &.chic{
-        font-size: 1.2rem;
-    }
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.bold{
+    font-weight: 600;
+}
+.carte__box-menu-content .price.light{
+    font-weight: 500;
 }
 
 .plat-title::after{
     content: ' ';
     position: absolute;
-    background-color: #3d1319;
     width: 100%;
     opacity: 0;
     height: 3px;
     left: 0;
     bottom: -3px;   
+    background-color: #3d1319
 }
 
 .plat-title:hover{
@@ -296,6 +348,16 @@ footer{
     &.plat-title::after{
         animation:slide .5s ease-in-out forwards;
     }
+}
+//ajout de la couleur de surlignage pour les pages differentes
+.plat-title{
+    &--chic1::after{background-color: #c77412;}
+    &--chic2::after{background-color: #A56799;}
+    &--chic3::after{background-color: #6E4CCC;}
+    &--delice1::after{background-color: #0228DD;}
+    &--delice2::after{background-color: #0670F3;}
+    &--delice3::after{background-color: #229DF9;}
+    &--palette::after{background-color:#A7EB72;}
 }
 
 @keyframes slide{
@@ -380,6 +442,8 @@ footer{
     .carte__box-menu-content p{
         font-size: .9rem;
     }
-    
+    .carte__box-menu--padding{
+        padding: 0;
+    }
 }
 
